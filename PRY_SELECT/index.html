@@ -1,0 +1,85 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        SELECT
+
+    </title>
+</head>
+<body>
+    <header>
+        <h1>SELECT EN FORMULAIOS</h1>
+    </header>
+    <main>
+        
+        <form action="server.html" method="get">
+
+            <fieldset>
+            <!-- SELECT PARA FORM -->
+            <label for="lenguaje_programacion">SELECCIONE SU LENGUAJE DE PROGRAMACION FAVORITO</label>
+            <select name="lenguaje_programacion" id="lenguaje_programacion">
+                <option value="c_mas_mas">C++</option>
+                <option value="java">Java</option>
+                <option value="python">Python</option>
+                <option value="javascript">JavaScript</option>
+                <option value="html" disabled>HTML</option>
+            </select>
+            <input type="date">
+            </fieldset>
+            <br>
+
+            <!-- MULTISELECT -->
+
+            <label for="musica_favorita">SELECCIONE SU MUSICA FAVORITA</label>
+            <select name="musica_favorita[]" id="musica_favorita" multiple required size="2" autofocus>
+                <optgroup title="REGUETON" label="REGUETON">
+                <option value="Sufre Mamon" selected>Hombres G</option>
+                <option value="Ella">Paulo Londra</option>
+                <option value="Beat it" disabled>Michael Jackson</option>
+                <option value="506">MORAT</option>
+                </optgroup>
+                <optgroup title="CHCICHA" label="CHCICHA">
+                <option value="Sufre Mamon" selected>Hombres G</option>
+                <option value="Ella">Paulo Londra</option>
+                <option value="Beat it" disabled>Michael Jackson</option>
+                <option value="506">MORAT</option>
+                </optgroup>
+
+            </select>
+            <br>
+
+            <!-- TEXT AREA -->
+
+            <label for="frase_motivadora">INGRESE SU FRASE DEL DIA DE HOY</label>
+            <textarea name="frase_motivadora" id="frase_motivadora" cols="10" rows="5">Buenos dias</textarea>
+
+            <br>
+
+            <!-- HIDDEN -->
+
+            <input type="hidden" name="cedula_usuario" value="1723449557">
+
+            <fieldset>
+                <legend>GENERO</legend>
+                <input type="radio" name="genero_usuario" value="masculino" id="masculino">
+                <label for="masculino">MASCULINO</label>
+
+                <input type="radio" name="genero_usuario" value="femenino" id="femenino">
+                <label for="femenino">FEMENINO</label>
+
+                <input type="radio" name="genero_usuario" value="otro" id="otro">
+                <label for="otro">OTRO</label>
+            </fieldset>
+
+            <button type="submit">
+                Enviar formulario
+            </button>
+        </form>
+    </main>
+    <footer>
+
+    </footer>
+    
+</body>
+</html>

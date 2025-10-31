@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        CSS EN UNA PAGINA
+    </title>
+    <style>
+        /*AFECTA A TODOS LOS ELEMENTOS DE NUESTRA PÁGINA*/
+        *{
+            text-align: center;
+            color: rgb(42, 67, 165);
+            font-size: x-small;
+            font-weight: bold;
+        }
+
+        /*AFECTA A UN ELEMENTO ESPECIFICO DE NUESTRA PÁGINA (POR ETIQUETA)*/
+        h1{
+            text-align: center;
+            color: rgb(165, 106, 42);
+            font-size: x-small;
+            font-weight: bold;
+        }
+
+        p{
+            color: darkslategray;
+            font-weight: bold;
+            font-size: large;
+        }
+
+        .botones-personalizados{
+            background-color: teal;
+            border-radius: 20px;
+            color: white;
+            font-size: medium;
+            width: 100%;
+            
+        }
+
+        #boton-unico{
+            background-color: rgba(254, 249, 254, 0);
+            border-radius: 10px;
+            color: rgb(38, 7, 178);
+            font-size: medium;
+            width: 50%;
+        }   
+
+    </style>
+    <link rel="stylesheet" href="./public/css/boton_enviar.css">
+</head>
+<body>
+    <h1>HOLA MUNDO</h1>
+    <H1>OTRO SALUDO</H1>
+    <p>COMO ESTAN</p>
+    <hr>
+    <button class="botones-personalizados boton-enviar">BOTON1</button> 
+    <button class="botones-personalizados">BOTON2</button>
+    <button class="botones-personalizados" id="boton-unico">BOTON3</button>
+    
+</body>
+</html>

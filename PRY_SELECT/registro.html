@@ -1,0 +1,159 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRO</title>
+</head>
+<body>
+
+    <header>
+        <h1>REGISTRO DE ALUMNOS</h1>
+    </header>
+
+    <main>
+        <form action="server.html" method="get">
+
+            <table border="2">
+
+            <thead>
+
+                <tr>
+                    <th colspan="4">REGISTRO DE ESTUDIANTES</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <th>
+                        <label for="nombres_completos" >Nombre y Apellido: </label>
+                        <th>
+                        <input 
+                        type="text" 
+                        name="nombres_completos" 
+                        id="nombres_completos"
+                        placeholder="Ej. Juan Perez">
+                        </th>
+                    </th>
+                </tr>
+
+                <tr>
+                    <th>
+                        <label for="documento_identidad">Numero de Cédula: </label>           
+                    <td>
+                        <input 
+                            type="text" 
+                            name="id_banner" 
+                            id="id_banner" 
+                            pattern="[0-9]{10}" 
+                            required>
+                    </td>
+   
+                        
+                    </th>
+                </tr>
+
+                <tr>
+                    <th>
+                        <label for="edad">Ingrese Edad: </label>
+                        <th>
+                        <input 
+                        type="date" 
+                        name="edad" 
+                        id="edad"
+                        max="2009-31-12"
+                        min="2005-01-01">
+                        </th>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="carrera">Elija Carrera:</label>
+                    </th>
+                    <th>
+                        <select name="carrera" id="carrera">
+                            <option value="sistemas">Ingenieria de Sistemas</option>
+                            <option value="industrial">Ingenieria Industrial</option>
+                            <option value="civil">Ingenieria Civil</option>
+                            <option value="mecanica">Ingenieria Mecanica</option>
+                        </select>
+                    </th>
+                </tr>
+
+                <tr>
+                    <th>
+                        <label for="">SELECCIONE SUS  CLASES: </label>
+                    </th>
+                    <th>
+
+                        <select name="clases[]" id="clases" multiple required size="1">
+                            <option value="matematicas">Matematicas</option>
+                            <option value="fisica">Fisica</option>
+                            <option value="programacion">Programación</option>
+                            <option value="bases">Bases de Datos</option>
+                            <option value="digital">Digital</option>
+                            <option value="quimica">Quimica</option>
+
+                        </select>
+                        
+
+
+                    </th>
+                </tr>
+
+                <tr>
+                    <th>
+                        <label for="hoja_vida">Hoja de Vida:</label>
+                    </th>
+                    <th>
+                        <input 
+                        type="file" 
+                        id="foto" 
+                        name="foto_perfil"
+                        accept=".pdf"
+                       >
+                    </th>
+                </tr>
+
+                <tr>
+                    <th>
+                        <label for="id">Generar Codigo: </label>
+                    </th>
+                    <td>
+                        <input 
+                            type="text" 
+                            name="id_banner" 
+                            id="id_banner" 
+                            pattern="[A-Z]{3}" 
+                            required>
+                    </td>
+                </tr>
+
+            </tbody>
+
+            <tfoot>
+
+            </tfoot>
+
+            </table>
+
+
+
+
+
+
+
+
+
+
+
+
+        </form>
+
+    </main>
+
+    <footer>
+
+    </footer>
+    
+</body>
+</html>

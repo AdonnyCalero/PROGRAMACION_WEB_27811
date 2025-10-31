@@ -1,15 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
         EXTERNO HTML
     </title>
+    <link rel="stylesheet" href="../public/css/estilos_externos.css">
 </head>
 <body>
 
-    
-    
+    <h1>
+        INPUT TIPO TEXTO:
+    </h1>
+    <!-- INPUT -->
+    <input type="text" 
+        name="input_text" 
+        value="Buenos días"
+        class="input_propiedad"
+    >
+
+    <br>
+
+    <h1>
+        TEXT AREA:
+    </h1>
+
+    <!-- TEXT AREA -->
+     <textarea class="text_area"
+        name="text_area"  
+        cols="10" 
+        rows="5">
+        Buenos días
+    </textarea>
+
+    <br>
+
+    <h1>
+        SELECT:
+    </h1>
+
+    <!-- SELECT -->
+    <select name="select" id="select" class="select_propiedad">
+        <option value="1">uno</option>
+        <option value="2">dos</option>
+        <option value="3">tres</option>
+    </select>
+    <br>
+
+    <h1>
+        CHECKBOX:
+    </h1>
+
+    <!-- CHECKBOX -->
+     <label for="checkbox">CHECKBOX</label>
+    <input type="checkbox" 
+        name="checkbox" 
+        checked
+        class="checkbox_propiedad"
+    >
+    <br>
+
+    <h1>
+        RADIO:
+    </h1>
+
+    <!-- RADIO -->
+    <label for=""> SELECIONE JORNADA</label>
+    <br>
+    <br>
+
+    <label for="matutina">MATUTINA</label>
+    <input 
+        type="radio" 
+        id="matutina" 
+        name="jornada" 
+        value="MATUTINA"
+        class="radio_propiedad"
+    >
+
+    <label for="vespertina">VESPERTINA</label>
+    <input 
+        type="radio" 
+        id="vespertina" 
+        name="jornada" 
+        value="VESPERTINA"
+        class="radio_propiedad"
+    >
+
 </body>
 </html>

@@ -1,0 +1,47 @@
+.text_area {
+
+    color-scheme: dark;
+    letter-spacing: 0.9rem;
+    scrollbar-color: red yellow;
+    text-decoration: underline;
+    text-transform: uppercase;   
+
+}
+
+.input_propiedad {
+
+    border-radius: 5px;
+    border-color: red #dcf005;
+    text-align: right;
+    height: 6em;
+    outline-style: dotted;
+}
+
+.select_propiedad {
+
+    font-weight: bolder;
+    text-shadow: hsl(231, 89%, 47%) 2px 2px 5px;
+    appearance: none;
+    background-image: linear-gradient(to right, rgb(242, 8, 47), white);
+    background-size: 10px;
+        
+}
+
+.checkbox_propiedad {
+
+    accent-color: crimson;
+    opacity: 0.4;
+    cursor:cell;
+    width: 100px; 
+    scale: 50%;
+    
+}
+
+.radio_propiedad {
+    outline: 2px dashed #666;
+    outline-offset: 4px;
+    filter: drop-shadow(0 0 4px rgb(3, 176, 81));
+    outline-color:tomato;
+    transform: scale(1.2);     
+    
+}
